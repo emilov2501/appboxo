@@ -1,0 +1,9 @@
+@import 'src/styles/_colors';
+
+.input-label {
+  .label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: $text-color;
+  }
+}

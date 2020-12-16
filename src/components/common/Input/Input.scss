@@ -1,0 +1,40 @@
+@import 'src/styles/_colors';
+
+$input-icon-height-width: 2.5rem;
+
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey;
+  border-radius: 0.3rem;
+  overflow: hidden;
+
+  &__field {
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: $input-icon-height-width;
+    font-size: $input-icon-height-width - 1.5rem;
+    text-align: center;
+    font-family: Rambla;
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg;
+    width: $input-icon-height-width + 1rem;
+    height: $input-icon-height-width;
+    user-select: none;
+  }
+}

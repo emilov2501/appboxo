@@ -1,0 +1,5 @@
+export const SET_NEXT_DATE = 'SET_NEXT_DATE';
+export const SET_PREV_DATE = 'SET_PREV_DATE';
+export const SET_VALUE = 'SET_TOTAL_VALUE';
+export const SET_IS_TOTAL_VALUE = 'SET_IS_TOTAL_VALUE';
+export const SET_RESULT_AMOUNT = 'SET_RESULT_AMOUNT'

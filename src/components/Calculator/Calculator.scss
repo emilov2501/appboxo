@@ -1,0 +1,81 @@
+@import 'src/styles/_colors';
+
+$calc-result-height: 12rem;
+$calc-result-amount-height: $calc-result-height - 4.5rem;
+$calc-result-note-height: $calc-result-height - 7.5rem;
+
+.calc {
+  width: clamp(25rem, 50%, 30rem);
+  box-sizing: border-box;
+  padding: 3.5rem;
+  background: $white;
+  border-radius: 0.3rem;
+  box-shadow: 0 0 0.8rem 0 rgba(black, .1);
+
+  &__form-group {
+    margin-bottom: 1.3rem;
+    margin-top: 1.3rem;
+  }
+
+  &__result {
+    width: 100%;
+    height: $calc-result-height;
+    border: 1px solid  $grey;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    margin-top: 2rem;
+
+    &-amount {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 0 2rem;
+      height: $calc-result-amount-height;
+
+      .result__title {
+        font-size: 1rem;
+        color: $text-color;
+      }
+
+      .result__total {
+        font-size: 1.5rem;
+        color: $blue;
+        font-weight: 600;
+      }
+    }
+
+    &-note {
+      background-color: $bg;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      font-size: 0.9rem;
+      height: $calc-result-note-height
+    }
+  }
+
+  &__title {
+    font-weight: 400;
+    color: $text-color;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
+  &__submit {
+    width: 100%;
+    height: 3rem;
+    background-color: $blue;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 0.7rem;
+    border: none;
+    color: $white;
+    margin-top: 2rem;
+  }
+
+  .input__icon--left, .input__icon--right {
+    font-size: 1.2rem;
+    color: darken($grey, 30%)
+  }
+}
